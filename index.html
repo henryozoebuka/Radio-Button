@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Radio Display and Hide Div.</h1>
+    <input type="radio" class="radio1" value="Click Me"/><span>Click to show Div1</span><br />
+    <input type="radio" class="radio2" value="Click Me"/><span>Click to show Div2</span><br />
+    <input type="radio" class="radio3" value="Click Me"/><span>Click to show Div3</span><br />
+
+    <div class="div1"><h2>This is Div1</h2></div>
+    <div class="div2"><h2>This is Div2</h2></div> 
+    <div class="div3"><h2>This is Div3</h2></div>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(".radio1").click(function(){
+            $(".div1").toggle();
+        });
+
+        $(".radio2").click(function(){
+            $(".div2").toggle();
+        });
+
+        $(".radio3").click(function(){
+            $(".div3").toggle();
+        });
+    </script>
+</body>
+</html>
